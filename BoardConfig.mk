@@ -30,6 +30,9 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
+# Try to build the kernel
+#TARGET_KERNEL_CONFIG := mako_defconfig
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
@@ -65,7 +68,7 @@ USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
-TARGET_USES_C2D_COMPOSITON := true
+TARGET_USES_C2D_COMPOSITION := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_LIB := librecovery_ui_mako
@@ -91,3 +94,5 @@ TARGET_NO_RPC := true
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/mako
 
 -include vendor/lge/mako/BoardConfigVendor.mk
+
+BOARD_HAS_NO_SELECT_BUTTON := true
