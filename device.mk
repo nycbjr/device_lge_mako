@@ -42,10 +42,14 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
-LOCAL_KERNEL := device/lge/mako-kernel/kernel
+LOCAL_KERNEL := device/lge/mako/kernel
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
+
+#Files needed for kernel
+PRODUCT_COPY_FILES += \
+	device/lge/mako/prebuilt/power.msm8960.so:system/lib/hw/power.msm8960.so
 
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
