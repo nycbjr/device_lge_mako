@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
 	device/lge/mako/prebuilt/power.msm8960.so:system/lib/hw/power.msm8960.so
 
+#Files needed to make life better
+PRODUCT_COPY_FILES += \
+	device/lge/mako/prebuilt/remount:system/xbin/remount
+
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	device/lge/mako/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
