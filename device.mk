@@ -69,11 +69,12 @@ PRODUCT_COPY_FILES += \
 	device/lge/mako/thermald-mako.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-	device/lge/mako/init.mako.rc:root/init.mako.rc \
-	device/lge/mako/init.mako.usb.rc:root/init.mako.usb.rc \
-	device/lge/mako/fstab.mako:root/fstab.mako \
-	device/lge/mako/ueventd.mako.rc:root/ueventd.mako.rc \
-	device/lge/mako/default.prop:root/default.prop \
+	device/lge/mako/ramdisk/init.rc:root/init.rc \
+	device/lge/mako/ramdisk/init.mako.rc:root/init.mako.rc \
+	device/lge/mako/ramdisk/init.mako.usb.rc:root/init.mako.usb.rc \
+	device/lge/mako/ramdisk/fstab.mako:root/fstab.mako \
+	device/lge/mako/ramdisk/ueventd.mako.rc:root/ueventd.mako.rc \
+	device/lge/mako/ramdisk/default.prop:root/default.prop \
 	device/lge/mako/media_profiles.xml:system/etc/media_profiles.xml \
 	device/lge/mako/media_codecs.xml:system/etc/media_codecs.xml
 
