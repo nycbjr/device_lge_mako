@@ -34,7 +34,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 #TARGET_KERNEL_CONFIG := mako_defconfig
 
 # Prebuilt Kernel Fallback
-TARGET_PREBUILT_KERNEL := device/lge/mako/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := true
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
